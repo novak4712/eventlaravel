@@ -8,6 +8,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\User;
 
+
 class NewUserWelcome extends Mailable
 {
     use Queueable, SerializesModels;
@@ -32,6 +33,5 @@ class NewUserWelcome extends Mailable
     public function build()
     {
         return $this->view('view.name');
-
     }
 }

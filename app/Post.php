@@ -11,11 +11,7 @@ class Post extends Model
 	public static function boot()
 	{
 		static::created(function($var){
-//			dd($var);
-
-			$exists = Storage::exists('/public/pages/'. $var->name . '.php');
-
-			Storage::put('/public/pages/'. $var->name . '.php', 'Some content');
+//		
 
 		});
 	}
